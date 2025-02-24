@@ -29,6 +29,16 @@ export default function App() {
         {!isLoading && (
           <Tab.Screen
             options={{
+              tabBarStyle:{
+                backgroundColor:'#C0CCC2'
+              },
+              headerStyle:{
+                backgroundColor:'#C0CCC2',
+              },
+              headerTitleStyle:{
+                color:'rgb(255, 255, 255)',
+              },
+              headerShadowVisible:false,
               tabBarIcon: () => (
                 <FontAwesome name="home" size={24} color="black" />
               ),
