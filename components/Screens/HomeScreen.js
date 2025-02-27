@@ -2,10 +2,10 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import UsersListComponent from "../elements/UsersListComponent";
 
-export default function HomeScreen() {
+export default function HomeScreen({isLoading}) {
   return (
     <View style={styles.container}>
-      <UsersListComponent/>
+      <UsersListComponent isLoading={isLoading}/>
     </View>
   );
 }
@@ -15,6 +15,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor:'#E8E8E8'
+    backgroundColor:'white'
   },
 });
